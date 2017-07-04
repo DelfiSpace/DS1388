@@ -48,11 +48,6 @@ void DS1388::init()
  *   unsigned char init_time[6]			seconds
  *	 unsigned char init_time[7]			hundredth of second 
  *
- * 	 NOTE: 
- *   1. Initialization parameters can be found in "DS1388.h" under time format and time settings
- *   2. All the input parameters except day_of_week and time_format, might require a combination  
- *      of zero order and tenth order time settings Eg: FOURTY | THREE
- *
  */
 void DS1388::init_time(unsigned char time_format, unsigned char *init_time)
 {
